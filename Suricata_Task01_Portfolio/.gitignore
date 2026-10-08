@@ -1,0 +1,17 @@
+# Suricata runtime output
+*.log
+*.json
+
+# Temporary/editor files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Local backups
+*.backup
+*.bak
+
+# Python/cache files if added later
+__pycache__/
+*.pyc

@@ -1,0 +1,18 @@
+# Reference snippets only.
+# Do NOT replace the full /etc/suricata/suricata.yaml with this file.
+# Adapt values to your actual Kali lab.
+
+HOME_NET: "[YOUR-LAB-NETWORK/CIDR]"
+
+af-packet:
+  - interface: YOUR_INTERFACE
+    cluster-id: 99
+    cluster-type: cluster_flow
+    defrag: yes
+    tpacket-v3: yes
+
+default-rule-path: /var/lib/suricata/rules
+
+rule-files:
+  - suricata.rules
+  - /etc/suricata/rules/local.rules
